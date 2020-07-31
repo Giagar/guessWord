@@ -1,0 +1,70 @@
+body{
+    display:grid;
+    justify-items: center;
+    font-family: Arial;
+  }
+  
+  #containers {
+    display: flex;
+  }
+  
+  .containers {
+    height: 15em;
+    width: 15em;
+  /*   border: 1px solid grey; */
+    padding: 10px;
+  }
+  
+  .enButton {
+    height: 15em;
+    width: 15em;
+    border: 1px solid navy;
+    border-radius: 50%;
+    background: hsla(240, 90%, 35%, 0.9);
+    box-shadow: 0 5px 20px hsla(240, 100%, 10%, 0.6);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .enButton p{
+    font-size:1.9em;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    font-weight: 600;
+    color: white;
+    font-family: Arial;
+  }
+  
+  #newWord {
+    margin: 50px 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    border-radius: 28px;
+    border: none;
+    padding: 0.4em;
+    background: orange;
+    outline: none;
+  }
+  
+  #newWord:hover {
+    color: white;
+    box-shadow: 0 0 25px 5px hsla(0, 40%, 60%, 0.7);
+  }
+  
+  .disabled {
+    background: white !important;
+    border: 4px solid lightgrey !important;
+  }
+  
+  .disabled:hover {
+    box-shadow: none !important;
+    color: grey !important;
+  }
+  
+  #displayNewWord {
+    font-size: 2em;
+    text-transform: uppercase;
+    border-bottom: 4px solid blue;
+    letter-spacing: 1.5px;
+  }
