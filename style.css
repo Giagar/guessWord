@@ -1,4 +1,26 @@
-body{
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  --spaceBetweenSections: 5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 4px solid hsl(0, 0%, 80%);
+}
+
+h1 {
+  text-align: center;
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 0.14rem;
+}
+
+  #mainContainer {
     display:grid;
     justify-items: center;
     font-family: Arial;
@@ -6,6 +28,7 @@ body{
   
   #containers {
     display: flex;
+    margin: var(--spaceBetweenSections) 0;
   }
   
   .containers {
@@ -13,6 +36,7 @@ body{
     width: 15em;
   /*   border: 1px solid grey; */
     padding: 10px;
+    margin: 0 0.5rem;
   }
   
   .enButton {
@@ -37,8 +61,9 @@ body{
   }
   
   #newWord {
-    margin: 50px 0;
-    font-size: 2em;
+    margin: 1.5rem 0;
+    margin-top: 0;
+    font-size: 2rem;
     text-transform: uppercase;
     border-radius: 28px;
     border: none;
@@ -50,6 +75,16 @@ body{
   #newWord:hover {
     color: white;
     box-shadow: 0 0 25px 5px hsla(0, 40%, 60%, 0.7);
+  }
+
+  #reset {
+    background: white;
+    /* hsl(198, 68%, 72%); */
+    border: 2px solid hsl(0, 0%, 30%);
+    padding: 0.5rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
   }
   
   .disabled {
@@ -63,8 +98,9 @@ body{
   }
   
   #displayNewWord {
-    font-size: 2em;
+    font-size: 2rem;
     text-transform: uppercase;
     border-bottom: 4px solid blue;
     letter-spacing: 1.5px;
+    margin-top: var(--spaceBetweenSections);
   }

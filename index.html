@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess The Word</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Guess The Word</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Guess The Word</h1>
+  </header>
+  <main id="mainContainer">
     <div id="containers">
       <!--   <div id="container" class="containers"></div> -->
       <div id="container1" class="containers"></div>
@@ -14,9 +20,14 @@
       <div id="container3" class="containers"></div>
       <div id="container4" class="containers"></div>
     </div>
+
     <button id="newWord" onClick="handleNewWord()">Get a word</button>
     <button id="reset" onClick="handleReset()">Reset</button>
+
     <div id="displayNewWord"></div>
-    <script src="./script.js"></script>
-  </body>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>
